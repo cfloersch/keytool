@@ -1,0 +1,36 @@
+Certificate Policies Extension should decode the ASN/DER Encoded PolicyInformation
+objects whenever they are set so that we might output them in the toString method.
+Currently, it stores them as PolicyInformation objects and transforms any byte
+stream into those objects. I think we can maintain them as both types..
+
+
+
+I would like to convert this to use pkcs12 as the default keystore irrespective
+of what the default type of the java platform is. However, that may complicate
+trusted store which I believe is a jks store type irrespective of my desire.
+
+
+
+
+
+
+Possibly add the ability to use Name Constraint v3 Extensions
+   This extension, which can used in CA certificates only, defines a name space
+   within which all subject names in subsequent certificates in a certification
+   path must be located.
+
+   We already have a NameConstraintExtension we just have to enable the keytool
+   to create and add them to the extension's set. We also need the tool to verify
+   the name constraints on a signing key when we are using it to sign a cert
+   request.
+
+
+
+
+
+
+
+Need some way to manage CRL's. I would like to modify this to eventually have a
+complete set of tools necessary for running a Certificate authority. Turn this
+tool into a general pki tool.
+

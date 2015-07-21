@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+SCRIPT_DIR=`dirname $0`
+
+java -jar $SCRIPT_DIR/${artifact.artifactId}.jar $@

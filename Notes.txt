@@ -1,0 +1,5 @@
+https://access.redhat.com/documentation/en-US/Red_Hat_Certificate_System/8.0/html/Admin_Guide/Standard_X.509_v3_Certificate_Extensions.html
+
+
+Note the ----- BEGIN RSA PRIVATE KEY ----- format is referred to as .key file
+extension by MS Windows
