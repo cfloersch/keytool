@@ -29,7 +29,7 @@
         <fileSet>
             <directory>${project.basedir}</directory>
             <includes>
-                <include>README</include>
+                <include>README.md</include>
             </includes>
             <outputDirectory>.</outputDirectory>
             <filtered>true</filtered>
@@ -44,9 +44,16 @@
         </fileSet>
         <fileSet>
             <directory>${project.basedir}/src/main/scripts</directory>
-            <includes>
-                <include>*</include>
-            </includes>
+            <includes><include>keytool</include></includes>
+            <fileMode>0755</fileMode>
+            <lineEnding>unix</lineEnding>
+            <outputDirectory>.</outputDirectory>
+            <filtered>true</filtered>
+        </fileSet>
+        <fileSet>
+            <directory>${project.basedir}/src/main/scripts</directory>
+            <includes><include>keytool.bat</include></includes>
+            <lineEnding>windows</lineEnding>
             <outputDirectory>.</outputDirectory>
             <filtered>true</filtered>
         </fileSet>
