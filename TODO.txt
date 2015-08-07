@@ -34,3 +34,9 @@ Need some way to manage CRL's. I would like to modify this to eventually have a
 complete set of tools necessary for running a Certificate authority. Turn this
 tool into a general pki tool.
 
+Even better would be a means to create and manage Online Certificate Status Protocol 
+data.
+
+
+
+Add support for SCT X.509v3 extensions along with the Log Server call.
