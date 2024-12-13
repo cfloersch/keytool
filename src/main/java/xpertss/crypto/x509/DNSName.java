@@ -27,7 +27,7 @@ import xpertss.crypto.util.*;
 public class DNSName implements GeneralNameInterface {
    private String name;
 
-   private static final String alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+   private static final String alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz*";
    private static final String digitsAndHyphen = "0123456789-";
    private static final String alphaDigitsAndHyphen = alpha + digitsAndHyphen;
 
