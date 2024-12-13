@@ -280,7 +280,7 @@ public class Resources_ja extends java.util.ListResourceBundle {
         {"alias.", "{0}, "},
         {"Entry.type.type.", "\u30A8\u30F3\u30C8\u30EA\u30FB\u30BF\u30A4\u30D7: {0}"},
         {"Certificate.chain.length.", "\u8A3C\u660E\u66F8\u30C1\u30A7\u30FC\u30F3\u306E\u9577\u3055: "},
-        {"Certificate.i.1.", "\u8A3C\u660E\u66F8[{0,number,integer}]:"},
+        {"Certificate.i.1.", "\u8A3C\u660E\u66F8[{0,number,integer}] ({1,number,#}):"},
         {"Certificate.fingerprint.SHA1.", "\u8A3C\u660E\u66F8\u306E\u30D5\u30A3\u30F3\u30AC\u30D7\u30EA\u30F3\u30C8(SHA1): "},
         {"Keystore.type.", "\u30AD\u30FC\u30B9\u30C8\u30A2\u306E\u30BF\u30A4\u30D7: "},
         {"Keystore.provider.", "\u30AD\u30FC\u30B9\u30C8\u30A2\u30FB\u30D7\u30ED\u30D0\u30A4\u30C0: "},

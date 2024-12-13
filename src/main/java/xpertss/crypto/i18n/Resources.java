@@ -300,7 +300,7 @@ public class Resources extends java.util.ListResourceBundle {
         {"alias.", "{0}, "},
         {"Entry.type.type.", "Entry type: {0}"},
         {"Certificate.chain.length.", "Certificate chain length: "},
-        {"Certificate.i.1.", "Certificate[{0,number,integer}]:"},
+        {"Certificate.i.1.", "Certificate[{0,number,integer}] ({1,number,#}):"},
 
         // TODO Create for other languages
         {"Public.key.fingerprint.MD5.", "Public Key fingerprint (MD5): "},

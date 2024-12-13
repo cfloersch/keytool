@@ -4,6 +4,9 @@ import java.io.*;
 import java.security.*;
 import java.security.cert.*;
 import java.security.cert.Certificate;
+import java.security.interfaces.DSAKey;
+import java.security.interfaces.ECKey;
+import java.security.interfaces.RSAKey;
 import java.text.Collator;
 import java.text.MessageFormat;
 import java.util.*;
@@ -751,6 +754,7 @@ public final class KeyTool {
          doDeleteEntry(alias);
          kssave = true;
       } else if (command == EXPORTCERT) {
+         // TODO Make it easy to output cert or chain in DER or PEM format .. Note a chain can be pkcs7 or multiple pem entries
          PrintStream ps = null;
          if (filename != null) {
             ps = new PrintStream(new FileOutputStream(filename));
@@ -1548,11 +1552,12 @@ public final class KeyTool {
          // Get the chain
          Certificate[] chain = keyStore.getCertificateChain(alias);
          if (chain != null) {
+
             if (verbose || rfc || debug) {
                out.println(rb.getString("Certificate.chain.length.") + chain.length);
                for (int i = 0; i < chain.length; i++) {
                   MessageFormat form = new MessageFormat(rb.getString("Certificate.i.1."));
-                  Object[] source = {new Integer((i + 1))};
+                  Object[] source = {new Integer((i + 1)), Integer.valueOf(computeKeySize(chain[i].getPublicKey()))};
                   out.println(form.format(source));
                   if (verbose && (chain[i] instanceof X509Certificate)) {
                      printX509Cert((X509Certificate) (chain[i]), out);
@@ -1588,6 +1593,19 @@ public final class KeyTool {
       } else {
          out.println(rb.getString("Unknown.Entry.Type"));
       }
+   }
+
+
+   private int computeKeySize(Key key)
+   {
+      if(key instanceof RSAKey) {
+         return ((RSAKey) key).getModulus().bitLength();
+      } else if(key instanceof DSAKey) {
+         return ((DSAKey) key).getParams().getP().bitLength();
+      } else if(key instanceof ECKey) {
+         return ((ECKey) key).getParams().getCurve().getField().getFieldSize();
+      }
+      return key.getEncoded().length * 8;
    }
 
    /**

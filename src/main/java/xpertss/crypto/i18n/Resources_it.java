@@ -280,7 +280,7 @@ public class Resources_it extends java.util.ListResourceBundle {
         {"alias.", "{0}, "},
         {"Entry.type.type.", "Tipo di voce: {0}"},
         {"Certificate.chain.length.", "Lunghezza catena certificati: "},
-        {"Certificate.i.1.", "Certificato[{0,number,integer}]:"},
+        {"Certificate.i.1.", "Certificato[{0,number,integer}] ({1,number,#}):"},
         {"Certificate.fingerprint.SHA1.", "Impronta digitale certificato (SHA1): "},
         {"Keystore.type.", "Tipo keystore: "},
         {"Keystore.provider.", "Provider keystore: "},

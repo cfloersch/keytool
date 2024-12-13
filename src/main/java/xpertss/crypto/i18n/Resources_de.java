@@ -279,7 +279,7 @@ public class Resources_de extends java.util.ListResourceBundle {
         {"alias.", "{0}, "},
         {"Entry.type.type.", "Eintragstyp: {0}"},
         {"Certificate.chain.length.", "Zertifikatkettenl\u00E4nge: "},
-        {"Certificate.i.1.", "Zertifikat[{0,number,integer}]:"},
+        {"Certificate.i.1.", "Zertifikat[{0,number,integer}] ({1,number,#}):"},
         {"Certificate.fingerprint.SHA1.", "Zertifikat-Fingerprint (SHA1): "},
         {"Keystore.type.", "Keystore-Typ: "},
         {"Keystore.provider.", "Keystore-Provider: "},

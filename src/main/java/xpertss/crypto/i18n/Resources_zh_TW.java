@@ -280,7 +280,7 @@ public class Resources_zh_TW extends java.util.ListResourceBundle {
         {"alias.", "{0}, "},
         {"Entry.type.type.", "\u9805\u76EE\u985E\u578B: {0}"},
         {"Certificate.chain.length.", "\u6191\u8B49\u93C8\u9577\u5EA6: "},
-        {"Certificate.i.1.", "\u6191\u8B49 [{0,number,integer}]:"},
+        {"Certificate.i.1.", "\u6191\u8B49 [{0,number,integer}] ({1,number,#}):"},
         {"Certificate.fingerprint.SHA1.", "\u6191\u8B49\u6307\u7D0B (SHA1): "},
         {"Keystore.type.", "\u91D1\u9470\u5132\u5B58\u5EAB\u985E\u578B: "},
         {"Keystore.provider.", "\u91D1\u9470\u5132\u5B58\u5EAB\u63D0\u4F9B\u8005: "},

@@ -280,7 +280,7 @@ public class Resources_sv extends java.util.ListResourceBundle {
         {"alias.", "{0}, "},
         {"Entry.type.type.", "Posttyp: {0}"},
         {"Certificate.chain.length.", "L\u00E4ngd p\u00E5 certifikatskedja: "},
-        {"Certificate.i.1.", "Certifikat[{0,number,integer}]:"},
+        {"Certificate.i.1.", "Certifikat[{0,number,integer}] ({1,number,#}):"},
         {"Certificate.fingerprint.SHA1.", "Certifikatets fingeravtryck (SHA1): "},
         {"Keystore.type.", "Nyckellagertyp: "},
         {"Keystore.provider.", "Nyckellagerleverant\u00F6r: "},

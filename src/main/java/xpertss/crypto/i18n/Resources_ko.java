@@ -280,7 +280,7 @@ public class Resources_ko extends java.util.ListResourceBundle {
         {"alias.", "{0}, "},
         {"Entry.type.type.", "\uD56D\uBAA9 \uC720\uD615: {0}"},
         {"Certificate.chain.length.", "\uC778\uC99D\uC11C \uCCB4\uC778 \uAE38\uC774: "},
-        {"Certificate.i.1.", "\uC778\uC99D\uC11C[{0,number,integer}]:"},
+        {"Certificate.i.1.", "\uC778\uC99D\uC11C[{0,number,integer}] ({1,number,#}):"},
         {"Certificate.fingerprint.SHA1.", "\uC778\uC99D\uC11C \uC9C0\uBB38(SHA1): "},
         {"Keystore.type.", "\uD0A4 \uC800\uC7A5\uC18C \uC720\uD615: "},
         {"Keystore.provider.", "\uD0A4 \uC800\uC7A5\uC18C \uC81C\uACF5\uC790: "},
