@@ -22,6 +22,7 @@ keytool -genkeypair -alias servera -keystore servers.pfx
 
 We exclude the `-validity` argument above as that is only necessary on self-signed certificates.
 
+
 Creating a Certificate Signing Request
 --------------------------------------
 
@@ -122,26 +123,30 @@ keytool -exportchain -alias servera -keystore servers.pfx -v -rfc -file servera-
 ```
 
 Again the `-rfc` argument indicates a PEM encoding to the export. In most cases, systems that
-want PKCS7 formatted certification chain do not care if it is PEM encoded or not.
+want PKCS7 formatted certification chain do not care if it is PEM encoded or not. The output
+file would generally have a p7c extension 
 
-The `-v` argument is important. If you exclude that you will get the certificate chain to
-root without the actual server certificate. Including it ensures you get the server cert and
-the entire chain.
+The `-v` argument is important. If you exclude that you will get the server certificate chain 
+with intermediaries but excluding the root certificate. Including it ensures you get the full
+chain from server to root.
 
 
 Exporting the Certificate Chain in PEM Format
 ---------------------------------------------
 
 Some servers may want the certificate and it's certification chain. There are many different
-variations of that. This will show the PEM variant:
+variations of that. This will show the individual PEM variant:
 
 ```
 keytool -exportpem -alias servera -keystore servers.pfx -v -file servera-chain.pem 
 ```
 
-The `-v` argument is important. If you exclude that you will get the certificate chain to
-root without the actual server certificate. Including it ensures you get the server cert and
-the entire chain.
+The `-v` argument is important. If you exclude that you will get the server certificate and
+the intermediaries, but no root certificate. Including it ensures you get the entire chain,
+including root.
+                  
+There is no need to include the `-rfc` argument as this always outputs the chain in PEM
+format.
 
 In some cases you may need to edit the resulting file to include the private key at the
 head.

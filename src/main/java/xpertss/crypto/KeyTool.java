@@ -1188,13 +1188,15 @@ public final class KeyTool {
       // Apparently what order you add them makes no difference. The DER encoding
       // process will order them in a standard way so that they are always decoded
       // into the same order. Root -> User
-      List<X509Certificate> chain = new ArrayList<>();
-      for(int i = certs.length - 1; i >= ((verbose) ? 0 : 1); i--) {
-         chain.add((X509Certificate)certs[i]);
+      X509Certificate[] chain = new X509Certificate[certs.length - ((verbose) ? 0 :  1)];
+      for(int i = 0; i < chain.length; i++) {
+         int offset = certs.length - ((verbose) ? 1 :  2) - i;
+         chain[i] = (X509Certificate) certs[offset];
       }
+
       PKCS7 pkcs =  new PKCS7(new AlgorithmId[0],
                                  new ContentInfo(ContentInfo.DATA_OID, null),
-                                 chain.toArray(new X509Certificate[chain.size()]),
+                                 chain,
                                  new SignerInfo[0]);
 
       dumpChain(pkcs, out);
@@ -1231,7 +1233,7 @@ public final class KeyTool {
          // The keystore always gives us the cert chain in User -> Root order.
          // Remove the first item (which is the user cert)
          // This gives us the intermediaries and the root
-         certs = Arrays.copyOfRange(certs, 1, certs.length);
+         certs = Arrays.copyOfRange(certs, 0, certs.length - 1);
       }
       dumpChain(certs, out);
 
