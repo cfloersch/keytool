@@ -1228,9 +1228,10 @@ public final class KeyTool {
       }
 
       if(!verbose) {
-         // I am assuming (tests seem to validate it) that the keystore always
-         // gives us the cert chain in User -> Root order.
-         certs = Arrays.copyOfRange(certs, 1, certs.length);
+         // The keystore always gives us the cert chain in User -> Root order.
+         // Remove the last item (which is the root cert)
+         // This gives us the user cert and any intermediaries
+         certs = Arrays.copyOfRange(certs, 0, certs.length - 1);
       }
       dumpChain(certs, out);
 
@@ -2082,7 +2083,7 @@ public final class KeyTool {
          }
          if (certs.length > 1) {
             MessageFormat form = new MessageFormat(rb.getString("Certificate.i.1."));
-            Object[] source = {new Integer(i + 1)};
+            Object[] source = {new Integer((i + 1)), Integer.valueOf(computeKeySize(x509Cert.getPublicKey()))};
             out.println(form.format(source));
          }
          if (rfc) dumpCert(x509Cert, out);
