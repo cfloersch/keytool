@@ -387,7 +387,7 @@ public class Resources_ko extends java.util.ListResourceBundle {
         {".Empty.value.", "(\uBE44\uC5B4 \uC788\uB294 \uAC12)"},
         {"Extension.Request.", "\uD655\uC7A5 \uC694\uCCAD:"},
         {"PKCS.10.Certificate.Request.Version.1.0.Subject.s.Public.Key.s.format.s.key.",
-                "PKCS #10 \uC778\uC99D\uC11C \uC694\uCCAD(1.0 \uBC84\uC804)\n\uC81C\uBAA9: %s\n\uACF5\uC6A9 \uD0A4: %s \uD615\uC2DD %s \uD0A4\n"},
+                "PKCS #10 \uC778\uC99D\uC11C \uC694\uCCAD(1.0 \uBC84\uC804)\n\uC81C\uBAA9: %s\n\uACF5\uC6A9 \uD0A4: %s \uD615\uC2DD %s \uD0A4\nPublic Key Size: %s\n"},
         {"Unknown.keyUsage.type.", "\uC54C \uC218 \uC5C6\uB294 keyUsage \uC720\uD615: "},
         {"Unknown.extendedkeyUsage.type.", "\uC54C \uC218 \uC5C6\uB294 extendedkeyUsage \uC720\uD615: "},
         {"Unknown.AccessDescription.type.", "\uC54C \uC218 \uC5C6\uB294 AccessDescription \uC720\uD615: "},

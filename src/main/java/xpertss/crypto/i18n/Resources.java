@@ -413,12 +413,15 @@ public class Resources extends java.util.ListResourceBundle {
         {"Please.provide.keysize.for.secret.key.generation",
                 "Please provide -keysize for secret key generation"},
 
+
+
+
         {"Extensions.", "Extensions: "},
         {".Empty.value.", "(Empty value)"},
         {"Extension.Request.", "Extension Request:"},
         {"PKCS.10.Certificate.Request.Version.1.0.Subject.s.Public.Key.s.format.s.key.",
                 "PKCS #10 Certificate Request (Version 1.0)\n" +
-                "Subject: %s\nPublic Key: %s format %s key\n"},
+                "Subject: %s\nPublic Key: %s format %s key\nPublic Key Size: %s\n"},
         {"Unknown.keyUsage.type.", "Unknown keyUsage type: "},
         {"Unknown.extendedkeyUsage.type.", "Unknown extendedkeyUsage type: "},
         {"Unknown.AccessDescription.type.", "Unknown AccessDescription type: "},

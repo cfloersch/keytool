@@ -387,7 +387,7 @@ public class Resources_ja extends java.util.ListResourceBundle {
         {".Empty.value.", "(\u7A7A\u306E\u5024)"},
         {"Extension.Request.", "\u62E1\u5F35\u30EA\u30AF\u30A8\u30B9\u30C8:"},
         {"PKCS.10.Certificate.Request.Version.1.0.Subject.s.Public.Key.s.format.s.key.",
-                "PKCS #10\u8A3C\u660E\u66F8\u30EA\u30AF\u30A8\u30B9\u30C8(\u30D0\u30FC\u30B8\u30E7\u30F31.0)\n\u30B5\u30D6\u30B8\u30A7\u30AF\u30C8: %s\n\u516C\u958B\u9375: %s \u30D5\u30A9\u30FC\u30DE\u30C3\u30C8 %s \u30AD\u30FC\n"},
+                "PKCS #10\u8A3C\u660E\u66F8\u30EA\u30AF\u30A8\u30B9\u30C8(\u30D0\u30FC\u30B8\u30E7\u30F31.0)\n\u30B5\u30D6\u30B8\u30A7\u30AF\u30C8: %s\n\u516C\u958B\u9375: %s \u30D5\u30A9\u30FC\u30DE\u30C3\u30C8 %s \u30AD\u30FC\nPublic Key Size: %s\n"},
         {"Unknown.keyUsage.type.", "\u4E0D\u660E\u306AkeyUsage\u30BF\u30A4\u30D7: "},
         {"Unknown.extendedkeyUsage.type.", "\u4E0D\u660E\u306AextendedkeyUsage\u30BF\u30A4\u30D7: "},
         {"Unknown.AccessDescription.type.", "\u4E0D\u660E\u306AAccessDescription\u30BF\u30A4\u30D7: "},

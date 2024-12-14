@@ -386,7 +386,7 @@ public class Resources_fr extends java.util.ListResourceBundle {
         {".Empty.value.", "(Valeur vide)"},
         {"Extension.Request.", "Demande d'extension :"},
         {"PKCS.10.Certificate.Request.Version.1.0.Subject.s.Public.Key.s.format.s.key.",
-                "Demande de certificat PKCS #10 (version 1.0)\nSujet : %s\nCl\u00E9 publique : format %s pour la cl\u00E9 %s\n"},
+                "Demande de certificat PKCS #10 (version 1.0)\nSujet : %s\nCl\u00E9 publique : format %s pour la cl\u00E9 %s\nPublic Key Size: %s\n"},
         {"Unknown.keyUsage.type.", "Type keyUsage inconnu : "},
         {"Unknown.extendedkeyUsage.type.", "Type extendedkeyUsage inconnu : "},
         {"Unknown.AccessDescription.type.", "Type AccessDescription inconnu : "},

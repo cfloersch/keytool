@@ -387,7 +387,7 @@ public class Resources_pt_BR extends java.util.ListResourceBundle {
         {".Empty.value.", "(Valor vazio)"},
         {"Extension.Request.", "Solicita\u00E7\u00E3o de Extens\u00E3o:"},
         {"PKCS.10.Certificate.Request.Version.1.0.Subject.s.Public.Key.s.format.s.key.",
-                "Solicita\u00E7\u00E3o do Certificado PKCS #10 (Vers\u00E3o 1.0)\nAssunto: %s\nChave P\u00FAblica: %s formato %s chave\n"},
+                "Solicita\u00E7\u00E3o do Certificado PKCS #10 (Vers\u00E3o 1.0)\nAssunto: %s\nChave P\u00FAblica: %s formato %s chave\nPublic Key Size: %s\n"},
         {"Unknown.keyUsage.type.", "Tipo de keyUsage desconhecido: "},
         {"Unknown.extendedkeyUsage.type.", "Tipo de extendedkeyUsage desconhecido: "},
         {"Unknown.AccessDescription.type.", "Tipo de AccessDescription desconhecido: "},

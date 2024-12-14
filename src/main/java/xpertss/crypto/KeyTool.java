@@ -70,7 +70,7 @@ public final class KeyTool {
    // please programtically add any providers you need and do not specify
    // them through the command line.
 
-   private String storetype = null;
+   private String storetype = "pkcs12";
    private char[] storePass = null;
    private char[] storePassNew = null;
    private char[] keyPass = null;
@@ -1229,9 +1229,9 @@ public final class KeyTool {
 
       if(!verbose) {
          // The keystore always gives us the cert chain in User -> Root order.
-         // Remove the last item (which is the root cert)
-         // This gives us the user cert and any intermediaries
-         certs = Arrays.copyOfRange(certs, 0, certs.length - 1);
+         // Remove the first item (which is the user cert)
+         // This gives us the intermediaries and the root
+         certs = Arrays.copyOfRange(certs, 1, certs.length);
       }
       dumpChain(certs, out);
 
@@ -2032,7 +2032,7 @@ public final class KeyTool {
 
       PublicKey pkey = req.getSubjectPublicKeyInfo();
       out.printf(rb.getString("PKCS.10.Certificate.Request.Version.1.0.Subject.s.Public.Key.s.format.s.key."),
-         req.getSubjectName(), pkey.getFormat(), pkey.getAlgorithm());
+         req.getSubjectName(), pkey.getFormat(), pkey.getAlgorithm(), computeKeySize(pkey));
 
       out.println(rb.getString("Public.key.fingerprint.MD5.") +
          getCertFingerPrint("MD5", pkey.getEncoded()));

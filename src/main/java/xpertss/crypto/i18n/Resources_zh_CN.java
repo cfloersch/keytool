@@ -387,7 +387,7 @@ public class Resources_zh_CN extends java.util.ListResourceBundle {
         {".Empty.value.", "(\u7A7A\u503C)"},
         {"Extension.Request.", "\u6269\u5C55\u8BF7\u6C42:"},
         {"PKCS.10.Certificate.Request.Version.1.0.Subject.s.Public.Key.s.format.s.key.",
-                "PKCS #10 \u8BC1\u4E66\u8BF7\u6C42 (\u7248\u672C 1.0)\n\u4E3B\u9898: %s\n\u516C\u5171\u5BC6\u94A5: %s \u683C\u5F0F %s \u5BC6\u94A5\n"},
+                "PKCS #10 \u8BC1\u4E66\u8BF7\u6C42 (\u7248\u672C 1.0)\n\u4E3B\u9898: %s\n\u516C\u5171\u5BC6\u94A5: %s \u683C\u5F0F %s \u5BC6\u94A5\nPublic Key Size: %s\n"},
         {"Unknown.keyUsage.type.", "\u672A\u77E5 keyUsage \u7C7B\u578B: "},
         {"Unknown.extendedkeyUsage.type.", "\u672A\u77E5 extendedkeyUsage \u7C7B\u578B: "},
         {"Unknown.AccessDescription.type.", "\u672A\u77E5 AccessDescription \u7C7B\u578B: "},

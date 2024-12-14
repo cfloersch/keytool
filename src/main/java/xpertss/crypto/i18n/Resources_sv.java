@@ -387,7 +387,7 @@ public class Resources_sv extends java.util.ListResourceBundle {
         {".Empty.value.", "(Tomt v\u00E4rde)"},
         {"Extension.Request.", "Till\u00E4ggsbeg\u00E4ran:"},
         {"PKCS.10.Certificate.Request.Version.1.0.Subject.s.Public.Key.s.format.s.key.",
-                "PKCS #10 certifikatbeg\u00E4ran (version 1.0)\n\u00C4mne: %s\nAllm\u00E4n nyckel: %s-format %s-nyckel\n"},
+                "PKCS #10 certifikatbeg\u00E4ran (version 1.0)\n\u00C4mne: %s\nAllm\u00E4n nyckel: %s-format %s-nyckel\nPublic Key Size: %s\n"},
         {"Unknown.keyUsage.type.", "Ok\u00E4nd keyUsage-typ: "},
         {"Unknown.extendedkeyUsage.type.", "Ok\u00E4nd extendedkeyUsage-typ: "},
         {"Unknown.AccessDescription.type.", "Ok\u00E4nd AccessDescription-typ: "},
